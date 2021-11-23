@@ -47,12 +47,16 @@ header .logo {
   color: var(--title-text-color);
   margin-right: 50px;
   display: inline-block;
+  padding: 30.5px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
 }
 .site-nav li:last-child a {
   margin-right: 0;
+}
+.auth-nav li:first-child a {
+  margin-left: 0;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -63,6 +67,7 @@ header .logo {
   color: var(--primary-text-color);
   margin-right: 50px;
   display: inline-block;
+  padding: 30.5px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
