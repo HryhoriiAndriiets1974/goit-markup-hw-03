@@ -8,6 +8,8 @@
   --primary-bg-color: #fff;
   /* акцент #2196F3 */
   --accent-color: #2196f3;
+  /* колір темного фону */
+  --bg-color: #2f303a;
 }
 body {
   /* font-family: 'Raleway', sans-serif; */
@@ -91,23 +93,16 @@ header .logo {
 } */
 /* Герой -------------------------------------*/
 .hero {
-  /* display: flex; */
   background: #2f303a;
   outline: 1px solid red;
   text-align: center;
-  /* max-width: 1600px;
-  margin: 0;
-  padding: 0; */
 }
 .hero-title {
   color: var(--for-black-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
-  /* /* width: 496px;
-  padding: 200px 452px 250px 452px; */
   display: inline-block;
-
   margin-bottom: 30px;
   text-transform: uppercase;
   width: 696px;
@@ -122,10 +117,6 @@ header .logo {
   font-size: 16px;
   line-height: 1.875;
   cursor: pointer;
-  /* display: inline-block;
-  padding: 10px 32px;
-  min-width: 200px;
-  height: 50px;*/
   margin: 0 auto;
   display: block;
   min-width: 250px;
@@ -144,6 +135,7 @@ header .logo {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.66667;
+  text-align: center;
 }
 .container {
   padding: 0 15px;
@@ -174,6 +166,8 @@ header .logo {
   background: var(--accent-color);
 }
 /* Переваги ---------------------------------*/
+.feature-list {
+}
 .feature-list .title {
   color: var(--title-text-color);
   text-transform: uppercase;
@@ -210,6 +204,9 @@ header .logo {
   line-height: 1.1875;
 }
 /* Підвал ------------------------------------*/
+.page-footer {
+  background: var(--bg-color);
+}
 .footer-contact {
   color: var(--for-black-color);
   font-size: 14px;
