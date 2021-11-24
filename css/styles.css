@@ -36,7 +36,7 @@ nav,
   letter-spacing: 0.03em;
 }
 .text-color {
-  color: var(--for-black-color);
+  color: var(--title-text-color);
 }
 /* Шапка --------------------------------------*/
 header {
@@ -91,27 +91,44 @@ header .logo {
 } */
 /* Герой -------------------------------------*/
 .hero {
-  display: flex;
+  /* display: flex; */
   background: #2f303a;
   outline: 1px solid red;
-  margin: 0 auto;
+  text-align: center;
+  /* max-width: 1600px;
+  margin: 0;
+  padding: 0; */
 }
 .hero-title {
   color: var(--for-black-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
+  /* /* width: 496px;
+  padding: 200px 452px 250px 452px; */
+  display: inline-block;
+
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  width: 696px;
+  text-align: center;
 }
 .button-hero {
   color: #fff;
   font-family: inherit;
   background: var(--accent-color);
-  border-radius: 3px;
+  border-radius: 4px;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
   cursor: pointer;
-  display: inline-block;
+  /* display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;*/
+  margin: 0 auto;
+  display: block;
+  min-width: 250px;
   padding: 10px 32px;
 }
 .button-hero:hover,
