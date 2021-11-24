@@ -4,7 +4,7 @@
   /* колір основного тексту #212121 */
   --title-text-color: #212121;
   /* колір для темного фону */
-  --for-black-color: #000;
+  --for-black-color: #fff;
   --primary-bg-color: #fff;
   /* акцент #2196F3 */
   --accent-color: #2196f3;
@@ -19,11 +19,10 @@ body {
   font-size: normal;
 }
 
-
 nav,
 .site-nav,
 .auth-nav,
- .container  nav {
+.container nav {
   display: flex;
   justify-content: space-between;
 }
@@ -34,7 +33,7 @@ nav,
   font-weight: bold;
   font-size: 26px;
   line-height: 1.192;
-  letter-spacing: 0.03em;  
+  letter-spacing: 0.03em;
 }
 .text-color {
   color: var(--for-black-color);
@@ -44,7 +43,8 @@ header {
   border-bottom: 1px solid #ececec;
 }
 header .logo {
-  margin-right: 0px;
+  margin-right: 94px;
+  padding: 23px 0;
   display: flex;
   align-items: center;
 }
@@ -61,8 +61,8 @@ header .logo {
 .site-nav li:last-child a {
   margin-right: 0;
 }
-.auth-nav li:first-child a {
-  margin-left: 0;
+.auth-nav li:last-child a {
+  margin: 0;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -78,22 +78,24 @@ header .logo {
   font-size: 14px;
   line-height: 1.143;
   cursor: pointer;
-  
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
 }
 /* .site-nav .studio {
-  
+
 }
 .site-nav .portfolio {
-  
+
 } */
 /* Герой -------------------------------------*/
-/* .hero {
-    background: #2f303a;
-} */
+.hero {
+  display: flex;
+  background: #2f303a;
+  outline: 1px solid red;
+  margin: 0 auto;
+}
 .hero-title {
   color: var(--for-black-color);
   font-weight: 900;
@@ -109,10 +111,12 @@ header .logo {
   font-size: 16px;
   line-height: 1.875;
   cursor: pointer;
+  display: inline-block;
+  padding: 10px 32px;
 }
 .button-hero:hover,
 .button-hero:focus {
-  background: #188CE8;
+  background: #188ce8;
 }
 /* Унікальна частина --------------------------*/
 .section {
@@ -127,7 +131,7 @@ header .logo {
 .container {
   padding: 0 15px;
   width: 1200px;
-   /* для розмітки ------------------------------*/
+  /* для розмітки ------------------------------*/
   border: 1px solid red;
   margin: 0 auto;
 }
@@ -170,26 +174,23 @@ header .logo {
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
-  
 }
 .work-list .col {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.875;
-  }
+}
 /* Наша команда -------------------------------*/
 .team .title {
   color: var(--title-text-color);
   font-weight: bold;
   font-size: 16px;
   line-height: 1.1875;
-  
 }
 .team .spec {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.1875;
-  
 }
 /* Підвал ------------------------------------*/
 .footer-contact {
@@ -197,7 +198,7 @@ header .logo {
   font-size: 14px;
   line-height: 1.714;
 }
- .logo-footer {
+.logo-footer {
   color: #fff;
 }
 .footer-contact:hover,
@@ -207,10 +208,8 @@ header .logo {
 .footer-contact .tel:hover,
 .footer-contact .tel:focus {
   color: var(--accent-color);
-  
 }
 .footer-contact .mailto,
 .footer-contact .tel {
   color: rgba(255, 255, 255, 0.6);
-  
 }
